@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username: root
+    password: senha-root
+    url: jdbc:mysql://localhost:3307/vollmed-api
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  data:
+    web:
+      pageable:
+        page-parameter: pagina
+        size-parameter: tamanho
+      sort:
+        sort-parameter: ordem
+
