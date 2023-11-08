@@ -1,12 +1,11 @@
-package med.voll.api.paciente;
+package med.voll.api.domain.paciente;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import med.voll.api.endereco.Endereco;
-import org.hibernate.validator.constraints.Normalized;
+import med.voll.api.domain.endereco.Endereco;
 
 @Data
 @NoArgsConstructor
