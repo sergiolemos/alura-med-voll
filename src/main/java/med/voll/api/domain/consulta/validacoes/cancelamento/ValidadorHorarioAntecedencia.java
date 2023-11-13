@@ -1,4 +1,4 @@
-package med.voll.api.domain.consulta.validacoes;
+package med.voll.api.domain.consulta.validacoes.cancelamento;
 
 import med.voll.api.domain.consulta.ConsultaRepository;
 import med.voll.api.domain.consulta.DadosCancelamentoConsulta;
@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-@Component
-public class ValidadorCancelamentoHorarioAntecedencia implements ValidadorCancelamentoConsulta{
+@Component("ValidadorHorarioAntecedenciaCancelamento")
+public class ValidadorHorarioAntecedencia implements ValidadorCancelamentoConsulta{
 
     private ConsultaRepository consultaRepository;
 
-    public ValidadorCancelamentoHorarioAntecedencia(ConsultaRepository consultaRepository) {
+    public ValidadorHorarioAntecedencia(ConsultaRepository consultaRepository) {
         this.consultaRepository = consultaRepository;
     }
 
